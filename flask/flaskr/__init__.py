@@ -29,4 +29,7 @@ def create_app(test_config=None):
     def hello():
         return "Hello, World!"
 
+    from .apis import apis
+    app.register_blueprint(apis)
+
     return app
