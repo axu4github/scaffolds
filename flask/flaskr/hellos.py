@@ -1,8 +1,10 @@
 # coding=utf-8
 
+from flaskr.loggings import LoggableMixin
 
-class HelloWorld(object):
-    """docstring for HelloWorld"""
 
-    def say():
+class HelloWorld(LoggableMixin):
+
+    def say(self):
+        self.logger.info("HelloWorld.say")
         return "Hello Api"

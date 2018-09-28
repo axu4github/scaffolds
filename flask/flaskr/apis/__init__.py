@@ -8,4 +8,4 @@ apis = Blueprint("apis", __name__, url_prefix="/apis")
 
 @apis.route("/hello", methods=("GET", ))
 def hello():
-    return HelloWorld.say()
+    return HelloWorld().say()
