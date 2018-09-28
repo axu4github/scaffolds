@@ -9,6 +9,8 @@ class Config(object):
     if not os.path.isdir(LOG_DIR):
         os.makedirs(LOG_DIR)
 
+    LOG_CONF_FILEPATH = os.path.join(BASE_DIR, "flaskr", "logging_config.ini")
+
     DEBUG = False
     TESTING = False
 
