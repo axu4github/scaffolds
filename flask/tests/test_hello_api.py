@@ -3,4 +3,4 @@
 
 def test_api_hello(client):
     response = client.get("/apis/hello")
-    assert response.data == b"Hello, World!"
+    assert response.data == b"Hello Api"
